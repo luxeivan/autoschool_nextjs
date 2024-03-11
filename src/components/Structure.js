@@ -1,7 +1,8 @@
+'use client'
 import React from 'react'
 import { Descriptions, Avatar, List } from 'antd';
 import pdf from './../img/pdf.svg'
-import structurepdf from './../files/structure/Структура и органы управления.pdf'
+// import structurepdf from '../../public/Структура_и_органы_управления.pdf'
 
 const items = [
     {
@@ -65,8 +66,8 @@ export default function Structure() {
                    
                     <List.Item>
                         <List.Item.Meta
-                            avatar={<Avatar src={ pdf} />}
-                            title={<a href={structurepdf} target='_blank'>{'Структура и органы управления'}</a>}
+                            avatar={<Avatar src={pdf.src} />}
+                            title={<a href='/Структура_и_органы_управления.pdf' target='_blank'>{'Структура и органы управления'}</a>}
                             description={1268 > 1000 ? `${(1268 / 1000).toFixed(1)} MB` : `${(1268).toFixed()} KB`}
                         />
                     </List.Item>

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { Avatar, Flex, Image, List, Typography } from 'antd';
 import conf from '../../config';
@@ -12,7 +13,7 @@ export default function SpecList({ list }) {
                 <List.Item key={index} >
                     <Flex>
                         <div style={{marginRight:"10px",maxWidth:"30%"}} >
-                        <Image src={`${conf.serverUrl}${item.img.data.attributes.url}`}/>
+                        <Image src={`${conf.serverUrl}${item.img.data.attributes.url}`} preview={false}/>
                         </div>
                         <div >
                             <Typography.Title level={4}>{item.name}</Typography.Title>

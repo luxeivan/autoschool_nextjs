@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout, Menu, theme } from 'antd';
-const { Header, Content, Footer } = Layout;
+import { Footer } from 'antd/es/layout/layout';
 
 export default function AppFooter() {
   return (
