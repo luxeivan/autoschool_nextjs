@@ -18,13 +18,13 @@ export async function generateMetadata() {
 export default async function Contacts() {
   let data = await getData(url)
   const { meta } = data
-  try {
-    const res = await axios.get(`${conf.serverUrl}/api/kontakty?populate[0]=meta&populate[1]=phonegroup`)
-    data = res.data.data.attributes
-    metadata = res.data.data.attributes.meta
-  } catch (error) {
-    console.log(error)
-  }
+  // try {
+  //   const res = await axios.get(`${conf.serverUrl}/api/kontakty?populate[0]=meta&populate[1]=phonegroup`)
+  //   data = res.data.data.attributes
+  //   metadata = res.data.data.attributes.meta
+  // } catch (error) {
+  //   console.log(error)
+  // }
 
   return (
     <div>
