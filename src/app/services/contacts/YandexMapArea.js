@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import YandexMap from '../../components/another/YandexMap'
+import YandexMap from '../../../components/another/YandexMap'
 
 export default function YandexMapArea({ data }) {
     return (

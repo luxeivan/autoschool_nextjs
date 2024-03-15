@@ -1,11 +1,11 @@
 import axios from 'axios'
 import React from 'react'
-import conf from '../../config'
-import PageTitle from '../../components/another/PageTitle'
+import conf from '../../../config'
+import PageTitle from '../../../components/another/PageTitle'
 import { Descriptions } from 'antd';
 import ListItem from './ListItem';
 import YandexMapArea from './YandexMapArea';
-import getData from '../../getData';
+import getData from '../../../getData';
 const url = '/api/kontakty?populate[0]=meta&populate[1]=phonegroup'
 
 export async function generateMetadata() {
